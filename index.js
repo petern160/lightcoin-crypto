@@ -13,7 +13,17 @@ class Withdrawal {
 }
 
 
+class Deposit {
 
+  constructor(amount) {
+    this.amount = amount;
+  }
+
+  commit() {
+    balance += this.amount;
+  }
+
+}
 
 // DRIVER CODE BELOW
 // We use the code below to "drive" the application logic above and make sure it's working as expected
